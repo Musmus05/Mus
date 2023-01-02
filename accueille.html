@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Algeria vésitor</title>
+    <link
+      rel="icon"
+      href="https://s2.qwant.com/thumbr/0x380/5/3/e47e20cf6f9fa9205f9e60dea41fbd472d80caa12fe9904b65e72afefbcb99/imgbin-algeria-national-football-team-algeria-national-under-20-football-team-argentina-national-football-team-fifa-world-cup-chinese-and-korean-football-world-preliminaries-aFckxZ1ZWWB40nJf0r0zLby97.jpg?u=https%3A%2F%2Fcdn.imgbin.com%2F10%2F15%2F8%2Fimgbin-algeria-national-football-team-algeria-national-under-20-football-team-argentina-national-football-team-fifa-world-cup-chinese-and-korean-football-world-preliminaries-aFckxZ1ZWWB40nJf0r0zLby97.jpg&q=0&b=1&p=0&a=0"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style 1.css" />
+  </head>
+
+  <body>
+    <!-- https://www.codingnepalweb.com/category/navigation-bar/page/2/ -->
+
+    <nav>
+      <ul id="navbar">
+        <li>
+          <a href="accueille.html"> Accueil </a>
+        </li>
+        <li>
+          <a href="ville.html"> Villes </a>
+        </li>
+        <li>
+          <a href="monument.html"> Monuments </a>
+        </li>
+        <li>
+          <a href="Les persos.html"> Paysage fabuleux </a>
+        </li>
+        <li>
+          <a href="cont.html"> Contact </a>
+        </li>
+      </ul>
+
+      <i class="fas fa-bars" id="icon" onclick="navigation()"></i>
+    </nav>
+
+    <!-- java script -->
+    <script type="text/javascript">
+      function navigation() {
+        var icon = document.getElementById("icon");
+        var navbar = document.getElementById("navbar");
+
+        if (icon.classList.contains("fa-bars")) {
+          icon.classList.remove("fa-bars");
+          icon.classList.add("fa-times");
+          navbar.style.left = "0";
+        } else {
+          icon.classList.remove("fa-times");
+          icon.classList.add("fa-bars");
+          navbar.style.left = "-100%";
+        }
+      }
+    </script>
+    <div class="arriereplan">
+      <h1>Meilleur site <br />Pour visiter l'Algérie</h1>
+    </div>
+
+    <video
+      autoplay
+      muted
+      id="background-video"
+      src="ALGERIA - 4K Video - Travel Around Algeria - 4K Video Ultra HD - 4K HDR - YouTube - Opera 2022-12-28 12-32-56_Trim.mp4"
+    ></video>
+  </body>
+</html>
